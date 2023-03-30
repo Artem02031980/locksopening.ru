@@ -1,0 +1,508 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale = 1.0, user-scalable = no">
+	<title>Вскрытие замков в СПб и ЛО</title>
+    <meta name="description" content="Вскрываем замки любой сложности в САнкт-Петербурге и Ленинградской области.">
+    <meta name="author" content="Артем Хмелев">
+    <meta name="copyright" content="Круглосуточная Аварийная Служба" />
+    
+    
+    <!--МОДАЛЬНОЕ ОКНО-ЦЕНЫ -->    
+    		<!-- Attach our CSS -->
+	  	<link rel="stylesheet" href="price/reveal.css">	
+	  	
+		<!-- Attach necessary scripts -->
+		<!-- <script type="text/javascript" src="jquery-1.4.4.min.js"></script> -->
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.6.min.js"></script>
+		<script type="text/javascript" src="price/jquery.reveal.js"></script>
+		
+<!--МОДАЛЬНОЕ ОКНО-ЦЕНЫ_КОНЕЦ -->    
+    
+    
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+	<link href="css/prettyPhoto.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="css/normalize.css" type="text/css" media="screen">
+	<link rel="stylesheet" href="css/grid.css" type="text/css" media="screen">
+	
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
+	
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="images/ico/favicon.png">
+    
+    
+
+    
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+	<script type="text/javascript" src="js/js.js"></script>
+	<script type="text/javascript" src="js/jquery.stellar.min.js"></script>
+	<script type="text/javascript" src="js/waypoints.min.js"></script>
+	
+	<!--[if lt IE 9]>
+		<script src="js/html5shiv.js"></script>
+		<script src="js/respond.src.js"></script>
+	<![endif]-->
+	
+	<script type="text/javascript">
+		$(document).ready(function(){	
+			$("#ajax-contact-form").submit(function() {
+				var str = $(this).serialize();		
+				$.ajax({
+					type: "POST",
+					url: "contact_form/contact_process.php",
+					data: str,
+					success: function(msg) {
+						// Message Sent - Show the 'Thank You' message and hide the form
+						if(msg == 'OK') {
+							result = '<div class="notification_ok">Спасибо за то что обратились в нашу компанию! Наш мастер свяжется с вами в ближайшее время.</div>';
+							$("#fields").hide();
+						} else {
+							result = msg;
+						}
+						$('#note').html(result);
+					}
+				});
+				return false;
+			});
+
+		});		
+	</script>
+	
+	<script type="text/javascript">$($.date_input.initialize);</script>
+	
+</head>
+
+<body>
+
+
+
+
+<div class="menu">	
+	<div class="container clearfix">
+
+		<div id="logo" class="fleft">
+			<a href="javascript:void(0);"><img src="images/logo.png" /></a>
+		</div>
+		
+		<div id="nav" class="fright">
+			<ul class="navigation">
+				<li data-slide="1">главная</li>
+				<li data-slide="2">наша служба</li>
+				<li data-slide="4">преимущества</li>
+				<li data-slide="6">услуги</li>
+				<li data-slide="8">контакты</li>
+				<div class="clear"></div>
+			</ul>
+		</div>
+	
+	</div>
+</div>
+
+
+<div class="slide" id="slide1" data-slide="1" data-stellar-background-ratio="0.5">
+	<div class="effect_2 padding_slide1">
+		<div class="container clearfix">
+
+			<div id="content" class="grid_12">
+				<div class="filtr_bg">
+					<h1>КРУГЛОСУТОЧНАЯ<br>АВАРИЙНАЯ<br>СЛУЖБА</h1>
+                    <h3>Вскрытие замков,<br>дверей и автомобилей<br>в Санкт-Петербурге<br>и Ленинградской области</h3>
+                    <h4>от 700 рублей!</h4>
+					<h2>+7 (812) 921-78-33</h2>
+					<p>Наша компания выполнит вскрытие замков любой сложности. Мы осуществляем вскрытие, ремонт и установку замков для входных дверей, автомобилей, гаражей и разных нестандартных объектов. Свяжитесь с нами и уже через 30 минут наш мастер будет у Вас!</p>
+					
+                    <a class="button" title="" data-slide="8">Заказать звонок</a>
+                <a class="button1" href="#" data-reveal-id="myModal">Посмотреть цены</a>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+<div class="slide" id="slide2" data-slide="2" data-stellar-background-ratio="0.5">
+	
+	<div class="container clearfix">
+		
+		<div id="content" class="grid_12">
+			<h1><span>наша служба</span></h1>
+		</div>
+		
+		<div class="grid_7">
+			<h4>Высокое качество, низкие цены!</h4>
+			<p>Услуги наших мастеров могут пригодиться в самых разных случаях, - утеря, поломка, кража ключей или просто выход замка входной двери из строя. Бывает и так, что вскрытие замков производится, когда захлопнулась дверь, а ключи остались внутри квартиры или дома.</p>
+			<p>Вскрыть металлическую дверь или деревянную, конечно, можно попытаться самостоятельно или обратившись к знакомым. Однако такие попытки решить проблему могут привести к большим денежным потерям. Непрофессиональная работа нередко приводит к порче двери или самого замка. При этом никто не гарантирует, что желаемый результат будет достигнут в сжатые сроки! Наоборот, вы потеряете время и нервы. А после услуг дилетантов придется дополнительно заменить замки, а то и всю входную дверь, проводить ее ремонт. Чтобы избежать этого, достаточно позвонить в нашу компанию по телефону <strong>+79119618810</strong></p>
+            <p>Наши цены самые низкие в регионе, несмотря на это качество услуг остается на самом высоком уровне. Этого мы смогли достигнуть благодаря исключению существования офиса и операторов, Вы связываетесь непосредственно с мастером. Мы работаем как в Санкт-Петербурге, так и в области. Наши специалисты работают 24 часа в сутки. Нашим безусловным преимуществом является аккуратная работа.</p>
+            <p>Мы оказываем следующие услуги:</p>
+			<ul class="about_sp">
+				<li>вскрытие входных дверей (квартиры, офисы, склады, коттеджи, гаражи);</li>
+				<li>вскрытие автомобилей (открытие дверей, зарядка АКБ и запуск авто);</li>
+				<li>замена и ремонт замков (большой выбор замков по ценам ниже магазинных).</li>
+			</ul>
+		</div>
+		<div class="grid_5 omega">
+			<img src="images/bl2.jpg">
+		</div>
+		
+	</div>
+</div>
+
+
+<div class="slide" id="slide3" data-slide="3" data-stellar-background-ratio="0.5">
+	<div class="effect_2 padding_slide3">
+		<div class="container clearfix">
+		
+			<div id="content" class="grid_12">
+				<p>самые Низкие цены в СПб!</p>
+			</div>
+		
+		</div>
+	</div>
+</div>
+
+
+<div class="slide" id="slide4" data-slide="4" data-stellar-background-ratio="0.5">
+	<div class="container clearfix">
+		
+		<div id="content" class="grid_12">
+			<h1><span>Наши преимущества</span></h1>
+		</div>
+		<div class="clear"></div>
+		
+		<div id="contenet">
+			<div class="gallery-list">
+				<!-- portfolio_block -->
+				<div>                                  
+					<div class="grid_3">
+						<div class="hover_img">
+							<img src="images/portfolio/1.jpg" alt="" />
+							<span class="portfolio_link"><a href="index.html#slide8">View item</a></span>
+						</div>
+						<div class="item_description">
+							Мы работаем<br>24 часа в сутки
+						</div>
+					</div>
+					<div class="grid_3">
+						<div class="hover_img">
+							<img src="images/portfolio/2.jpg" alt="" />
+							<span class="portfolio_link"><a href="index.html#slide8">View item</a></span>
+						</div>
+						<div class="item_description">
+							Мастер будет<br>через 30 минут
+						</div>
+					</div>
+					<div class="grid_3">
+						<div class="hover_img">
+							<img src="images/portfolio/3.jpg" alt="" />
+							<span class="portfolio_link"><a href="index.html#slide8">View item</a></span>
+						</div>
+						<div class="item_description">
+							Низкие цены в регионе<br>— От 700 рублей!
+						</div>
+					</div>
+					<div class="grid_3">
+						<div class="hover_img">
+							<img src="images/portfolio/4.jpg" alt="" />
+							<span class="portfolio_link"><a href="index.html#slide8">View item</a></span>
+						</div>
+						<div class="item_description">
+							Качественная и<br> аккуратная работа
+						</div>
+					</div>
+					<div class="grid_3">
+						<div class="hover_img">
+							<img src="images/portfolio/5.jpg" alt="" />
+							<span class="portfolio_link"><a href="index.html#slide8">View item</a></span>
+						</div>
+						<div class="item_description">
+							Мы вскрываем даже<br>сложные замки!
+						</div>
+					</div>
+					
+                    <div class="grid_3">
+						<div class="hover_img">
+							<img src="images/portfolio/7.jpg" alt="" />
+							<span class="portfolio_link"><a href="index.html#slide8">View item</a></span>
+						</div>
+						<div class="item_description">
+							Широкая география<br>по СПб и Области
+						</div>
+					</div>
+                    
+                    <div class="grid_3">
+						<div class="hover_img">
+							<img src="images/portfolio/6.jpg" alt="" />
+							<span class="portfolio_link"><a href="index.html#slide8">View item</a></span>
+						</div>
+						<div class="item_description">
+							вскрытие импортных<br>автомобилей
+						</div>
+					</div>
+					
+                    
+					
+                    <div class="grid_3">
+						<div class="hover_img">
+							<img src="images/portfolio/8.jpg" alt="" />
+							<span class="portfolio_link"><a href="index.html#slide8">View item</a></span>
+						</div>
+						<div class="item_description">
+							Звонок непосредственно<br>мастеру
+						</div>
+					</div>
+					<div class="clear"></div>
+				</div>   
+				<!-- //portfolio_block -->   
+			</div>
+		</div>
+		
+	</div>
+</div>
+
+
+
+
+<div class="slide" id="slide5" data-slide="5" data-stellar-background-ratio="0.5">
+	<div class="effect_2 padding_slide5">
+		<div class="container clearfix">
+		
+			<div id="content" class="grid_12">
+				<p>Замки любой сложности!</p>
+			</div>
+		
+		</div>
+	</div>
+</div>
+
+
+
+
+<div class="slide" id="slide6" data-slide="6" data-stellar-background-ratio="0.5">
+	<div class="container clearfix">
+
+		<div id="content" class="grid_12">
+			<h1><span>НАШИ УСЛУГИ</span></h1>
+		</div>
+		<div class="clear"></div>
+		
+		<div id="content">
+			<div class="grid_4 serv_block">
+				<div class="icon_block1"></div>
+				<p>Вскрытие<br>входных дверей</p>
+				<span>Приедем быстро и вскроем даже<br>самый сложный замок!</span>
+				<div class="serv_link1">С вами связаться?</div>
+				<a class="serv_link2" href="index.html#slide8">Оставьте контакты</a>
+			</div>
+			<div class="grid_4 serv_block">
+				<div class="icon_block2"></div>
+				<p>Вскрытие<br>автомобилей</p>
+				<span>Вскрываем любые автомобили,<br>в том числе иномарки!</span>
+				<div class="serv_link1">С вами связаться?</div>
+				<a class="serv_link2" href="index.html#slide8">Оставьте контакты</a>
+			</div>
+			<div class="grid_4 serv_block omega">
+				<div class="icon_block3"></div>
+				<p>Ремонт и замена<br>замков</p>
+				<span>Отремонтируем или заменим замок<br>по выгодным ценам!</span>
+				<div class="serv_link1">С вами связаться?</div>
+				<a class="serv_link2" href="index.html#slide8">Оставьте контакты</a>
+			</div>
+		</div>
+	
+	</div>
+</div>
+
+
+
+<div class="slide" id="slide7" data-slide="7" data-stellar-background-ratio="0.5">
+	<div class="effect_2 padding_slide7">
+		<div class="container clearfix">
+		
+			<div id="content" class="grid_12">
+				<p>Откроем любые автомобили!</p>
+			</div>
+		
+		</div>
+	</div>
+</div>
+
+
+
+<div class="slide" id="slide8" data-slide="8" data-stellar-background-ratio="0.5">
+	<div class="container clearfix">
+		
+		<div id="content" class="grid_12">
+			<h1><span>Свяжитесь с нами!</span></h1>
+		</div>
+		<div class="clear"></div>
+		
+        
+        
+		<div class="grid_4">
+			<h4>Закажите звонок!</h4>
+			<div class="contact_form">  
+				<div id="note"></div>
+				<div id="fields">
+					<form id="ajax-contact-form" action="">
+						<input type="text" name="name" value="" placeholder="Ваше имя" />
+						<input type="text" name="subject" value="" placeholder="Ваш телефон" /> 
+						<!--<input type="text" name="email" value="" placeholder="Ваш Email" />-->
+						<!--<textarea name="message" id="message" placeholder="Ваш телефон и/или сообщение"></textarea>-->
+						<div class="clear"></div>
+						<input type="reset" class="contact_btn" value="Очистить" />
+						<input type="submit" class="contact_btn send_btn" value="Отправить" />
+						<div class="clear"></div>
+					</form>
+				</div>
+			</div>
+		</div>
+		
+        <div class="grid_4 contact_det_block">
+			<h4>Наши контакты</h4>
+			<ul class="foot_block_intouch">
+                <li class="touch_phone"><p>+7 (812) 921-78-33</p></li>
+                <li class="touch_phone"><p>+79119618810 (мобильный)</p></li>
+				<li class="touch_clock"><p>Работаем круглосуточно</p></li>
+				<li class="touch_mail"><a href="mailto:info@locksopening.ru">info@locksopening.ru</a></li>
+				<li class="touch_site"><a href="http://locksopening.ru/">www.locksopening.ru</a></li>
+				<!--<li class="touch_adress"><p>3301 Lorem, Dolor Sit Amet St</p></li>-->
+				<!--<li class="facebook"><a href="javascript:void(0);">http://facebook.com/companyname</a></li>-->
+				<!--<li class="twitter"><a href="javascript:void(0);">http://twitter.com/companyname</a></li>-->
+			</ul>
+		</div>
+        
+        
+        
+		<div class="grid_4 omega">
+			<h4>Важная информация</h4>
+			<p>Мастера всегда готовы пойти вам на встречу! Однако в нашей компании предусмотрена оплата в размере 500 рублей в случае, если вызов мастера окажется ложным.</p>
+			
+		</div>
+		<div class="clear"></div>
+
+	</div>
+	
+	<div id="map_block"><img src="images/end.jpg"></div>
+	
+</div>
+
+
+
+
+<div id="footer">
+	<div class="container clearfix">
+		<div class="copyright">&copy; 2016 | <a href="index.html#slide2"><img src="images/logo-icon.png" height="15"></a></div>
+		<div id="back_top"><a class="button" title="" data-slide="1">Наверх</a></div>
+	</div>
+</div>
+
+<div id="myModal" class="reveal-modal">
+			<h2>Автомобили</h2>
+			<table>
+            
+            <tr>
+            <td class="td1">Вскрытие отечественных автомобилей в пределах КАД</td>
+            <td class="td2">от 1000 руб.</td>
+            </tr>
+            
+            <tr>
+            <td class="td1">Вскрытие иностранных автомобилей в пределах КАД</td>
+            <td class="td2">от 1200 руб.</td>
+            </tr>
+            
+            <tr>
+            <td class="td1">Вскрытие автомоблией в Ленинградской области</td>
+            <td class="td2">от 1800 руб.</td>
+            </tr>
+            
+            </table>
+            
+            <h2>Замки: вскрытие</h2>
+			
+            <table>
+            
+            <tr>
+            <td class="td1">Межкомнатные двери в пределах КАД</td>
+            <td class="td2">от 700 руб.</td>
+            </tr>
+            
+            <tr>
+            <td class="td1">Двери с отчественным замком в пределах КАД</td>
+            <td class="td2">от 1000 руб.</td>
+            </tr>
+            
+            <tr>
+            <td class="td1">Двери с импортным замком в пределах КАД</td>
+            <td class="td2">от 1500 руб.</td>
+            </tr>
+            
+            <tr>
+            <td class="td1">Замки с усиленной защитой и броне-накладкой в пределах КАД</td>
+            <td class="td2">от 2000 руб.</td>
+            </tr>
+            
+            <tr>
+            <td class="td1">Гаражные замки в пределах КАД</td>
+            <td class="td2">от 1200 руб.</td>
+            </tr>
+            
+            <tr>
+            <td class="td1">Вскрытие замков в Ленинградской области</td>
+            <td class="td2">от 2000 руб.</td>
+            </tr>
+            
+            
+            </table>
+            
+            
+            <h2>Замки: установка</h2>
+            
+            <table>
+            
+            <tr>
+            <td class="td1">Установка и замена замков в пределах КАД</td>
+            <td class="td2">от 1000 руб.</td>
+            </tr>
+            
+            <tr>
+            <td class="td1">Установка дверных ручек в пределах КАД</td>
+            <td class="td2">от 700 руб.</td>
+            </tr>
+            
+            <tr>
+            <td class="td1">Установка замка "Барьер" в пределах КАД</td>
+            <td class="td2">от 1300 руб.</td>
+            </tr>
+            
+            <tr>
+            <td class="td1">Установка замков в Ленинградской области</td>
+            <td class="td2">от 1500 руб.</td>
+            </tr>
+            
+            
+            
+            </table>
+            
+            
+			<a class="close-reveal-modal">&#215;</a>
+		</div>
+
+
+<!-- Yandex.Metrika counter --> <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter37390305 = new Ya.Metrika({ id:37390305, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/37390305" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+
+<script> 
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');ga('create', 'UA-80735262-1', 'auto');ga('send', 'pageview');</script>
+
+</body>
+</html>
